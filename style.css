@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+#container{
+   width: 90%;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+h1 a{
+    font-weight: 300px;
+    color:#4285F4;
+    text-decoration: none;
+}
+#searchbox{
+    flex:50%;
+    background: linear-gradient(#3EC729,#34A853);
+    min-width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#logo{
+   flex: 50%;
+}
+#header{
+   
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.text{
+    float: left;
+    width:200px;
+    padding:5px;
+    background: white url(search.png) right center no-repeat;
+    color:green;
+}
+.submit{
+    float:right;
+    padding:5px;
+    background:white;
+}
+.clear{
+    clear:both;
+}
+#menu{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+   
+    border-radius: 10px;
+    height:auto;
+    background: linear-gradient(skyblue,green);
+    
+}
+
+@media screen and (max-width:740px){
+    
+    #menu a{
+        border-right: none!important;
+    }
+    
+    
+    #menu{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+#menu a:last-child{
+    border-right: none!important;
+}
+#menu a{
+    display:flex;
+    flex:0.5;
+    justify-content: center;
+    align-items: CENTER;
+    padding: 10px 20px;
+    border-right: 1px solid;
+}
+#menu a:nth-of-type(3) { flex:1.5; }
+#menu a:nth-of-type(4) { flex:1; }
+
+#menu a{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color:darkblue; 
+    transition: color 0.5s linear;
+   -webkit-  transition: color 0.5s ease;
+    
+}
+#menu a:hover, #menu a.active{
+    
+        font-weight:bold;
+        color:aqua;
+}
+#introduction{
+    background: linear-gradient(white, green);
+    padding: 30px;
+}
+#introduction h3{
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+}
+#introduction p{
+    font-size: 20px;
+    color: gainsboro;
+    text-align: justify;
+}
+.sidebar{
+   
+
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: palegreen;
+    padding: 10px 30px;
+    flex:50%;
+    
+}
+.sidebar h3{
+    font-size: 30px;
+    margin-left: 45px;
+    color:white;
+    
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size:20px;
+    transition: font-size 0.5s ease;
+}
+.sidebar ul li a:hover{
+
+    font-size:25px;
+}
+
+#footer{
+    height: 50px;
+    background:green;
+}
+.flexbox{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
